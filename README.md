@@ -1,4 +1,4 @@
 # cinepolis
 Automation Test Program for Cinepolis website
 
-Development Branch to Try Stuff Out
+Development Branch to Try Stuff Out.
