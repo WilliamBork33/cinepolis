@@ -5,7 +5,11 @@ export class HomePageAction {
         this.citySelector = '#cmbCiudades';
         this.theatreSelector = '#cmbComplejos';
         this.verCarteleraSelector = '.btn.btnEnviar.btnVerCartelera'
+    }
 
+    // Method Selects the Cinepolis Home Page
+    setURL() {
+        browser.url(this.URL);
     }
 
     // Method Selects the Desired City
