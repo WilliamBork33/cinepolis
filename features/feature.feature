@@ -1,12 +1,15 @@
 @watch
-Feature: Test
+Feature: Test1
     Scenario: Cinepolis
-        Given we're in Cinepolis
-        When we click `//*[@id="cmbCiudades"]`
-        Then we click `//*[@id="cmbCiudades"]/option[107]`
-        Then click `//*[@id="cmbComplejos"]`
-        Then we click San Pedro `//*[@id="cmbComplejos"]/option[2]`
-        Then we click on the slider `//*[@id="slider-range"]/span[10]`
-        Then confirm the times display correctly `row tituloPelicula ng-scope`
+        Given we are in Cinepolis
+        Then we select the city and theatre on home page
         
-        When we click to view the movie `datalayer-movie ng-binding`
+        Given we are on the San Pedro Theatre page
+        Then we select the time filter
+
+        #When we select "San Pedro"
+        #Then we click VER CARTELERA
+        #Given we were correctly redirected to the schedule of Cinepolis San Pedro
+        #When we select an hour filter between "11:00" and "19:00"
+        #         # up to here both tests are alike
+        #Then all movies should only have  pertinent schedules between "11:00" and "19:00"
