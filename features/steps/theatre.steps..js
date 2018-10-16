@@ -16,7 +16,7 @@ module.exports =  function() {
   });
 
   this.Then(/^the desired movie results are shown$/, function () {
-    theatrePage.compareTimesMovie()
+    theatrePage.compareTimes()
   });
 
 }

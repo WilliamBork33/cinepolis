@@ -1,5 +1,9 @@
-# account-signup-automation-testing
-Automation Test Program for Creating an Account on `http://www.cinepolis.com/`
+# cinepolis
+Automation Test Program for `http://www.cinepolis.com/`
+
+
+## Expected Behavior
+- Test will select city, theatre, display available movies, capture movie details in arrays, enter each individual movie page, and finally compare that the individual movie pages display the same time data as the theatre page.
 
 
 - To run tests type:
@@ -8,12 +12,12 @@ Automation Test Program for Creating an Account on `http://www.cinepolis.com/`
     - `yarn test:web -t @theatre` (to run just the theatre page test)
 
 
-## Known Issues
+### Known Issues
 
-- None. Next step is to script uploading a screenshot to the platform.
-- Also, make .env file variables work. 
+- Click and enter individual page method just clicks and enters the same movie, not the others.
+- Must finish capturing and comparing the times from the individual movies page.
 
 
-### Self-Reminder For Starting This Project
+#### Self-Reminder For Starting This Project
 - yarn init
 - yarn --dev add babel-core babel-preset-env chimp
