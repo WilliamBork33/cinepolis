@@ -1,4 +1,4 @@
-# cinepolis
+# Cinepolis
 
 Automation Test Program for `http://www.cinepolis.com/`
 
