@@ -16,10 +16,13 @@ class HomePage extends Page {
         get verCartelera()  { return browser.element('.btn.btnEnviar.btnVerCartelera'); }
 
 
+        // Method to Open Browser to Desired Page
         open() {
             browser.url(this.url);
         }
 
+
+        // Method to Select City
         selectCity(){
             browser.click('#cmbCiudades');
             browser.click(`#cmbCiudades > option:nth-child(107)`);
@@ -42,11 +45,15 @@ class HomePage extends Page {
             
         }
 
+
+        // Method to Select Theatre
         selectTheatre(){
             browser.click('#cmbComplejos')
             browser.click('#cmbComplejos > option:nth-child(2)');
         }
 
+        
+        // This Method Can Be Removed Due to Site Design Redundancy
         verCartelera(){
             browser.click('.btn.btnEnviar.btnVerCartelera')
         }
